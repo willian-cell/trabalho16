@@ -1,0 +1,5 @@
+@"
+pandas
+plotly
+numpy
+"@ | Out-File -Encoding utf8 requirements.txt

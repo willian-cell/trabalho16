@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+venv/
+.env
+
+# IDE/OS
+.vscode/
+.idea/
+.DS_Store
+
+# Jupyter/Plotly
+.ipynb_checkpoints/
+*.html
+
+# Dados (opcional: deixe o .xlsx fora do repo)
+*.xlsx
+/data/
