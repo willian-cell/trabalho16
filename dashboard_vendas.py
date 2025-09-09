@@ -395,10 +395,10 @@ def salvar_html(figs: dict, saida_html: Path):
 
     html = f"""
     <html>
-    <head><meta charset='utf-8'><title>Dashboard Vendas</title></head>
+    <head><meta charset='utf-8'><title>Dashboard Vendas por: Willian Batista Oliveira</title></head>
     <body style="max-width:1100px;margin:24px auto;padding:0 16px;">
       <h1 style="font-family:Arial;margin-bottom:8px;">Dashboard de Vendas</h1>
-      <p style="font-family:Arial;color:#444;margin-top:0">Interativo · Filtrável pela legenda</p>
+      <p style="font-family:Arial;color:#444;margin-top:0">Interativo · Filtros e Legendas</p>
       {' '.join(parts)}
     </body>
     </html>
