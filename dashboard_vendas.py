@@ -394,16 +394,32 @@ def salvar_html(figs: dict, saida_html: Path):
             parts.append(plot(fig, include_plotlyjs="cdn", output_type="div"))
 
     html = f"""
-    <html>
-    <head><meta charset='utf-8'><title>Dashboard Vendas por: Willian Batista Oliveira</title></head>
-    <body style="max-width:1100px;margin:24px auto;padding:0 16px;">
-      <h1 style="font-family:Arial;margin-bottom:8px;">Dashboard de Vendas</h1>
-      <p style="font-family:Arial;color:#444;margin-top:0">Interativo · Filtros e Legendas</p>
-      {' '.join(parts)}
-    </body>
-    </html>
-    """
+        <html>
+        <head>
+        <meta charset='utf-8'>
+        <title>Dashboard Vendas</title>
+        </head>
+        <body style="max-width:1100px;margin:24px auto;padding:0 16px;">
+        <h1 style="font-family:Arial;margin-bottom:8px;">Dashboard de Vendas</h1>
+        <p style="font-family:Arial;color:#444;margin-top:0">
+            Análise por: Willian Batista Oliveira
+        </p>
+
+        <!-- Botão de Download -->
+        <a href="imagens/Analise_Willian_Batista_Oliveira.pdf" download
+            style="display:inline-block;padding:10px 20px;
+                    background:#007BFF;color:#fff;
+                    text-decoration:none;border-radius:6px;
+                    font-family:Arial;">
+            Baixar a Análise em PDF
+        </a>
+
+        {' '.join(parts)}
+        </body>
+        </html>
+        """
     saida_html.write_text(html, encoding="utf-8")
+
 
 
 
